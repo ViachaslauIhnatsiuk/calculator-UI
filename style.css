@@ -1,0 +1,145 @@
+* {
+	padding: 0px;
+	margin: 0px;
+	border: 0px;
+}
+*,
+*:before,
+*:after {
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+html,
+body {
+	height: 100%;
+	font-family: "Work Sans";
+	font-size: 32px;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+}
+
+.page {
+	flex: 1 1 auto;
+	margin: 0 auto;
+	padding-top: 150px;
+}
+
+.calc__body {
+	height: 582px;
+	width: 364px;
+	padding: 0px 20px 25px;
+	background-color: #17171c;
+	color: #fff;
+}
+
+.calc__screen {
+	height: 133px;
+	background-color: #17171c;
+	padding: 0;
+	font-size: 96px;
+	font-weight: 300;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	color: #fff;
+}
+
+.calc__buttons {
+	display: flex;
+}
+
+.main__digital {
+	flex: 1 1 auto;
+}
+
+.calc__row-top {
+	display: flex;
+	margin-bottom: 16px;
+}
+
+.calc__btn-discharge {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 153.33px;
+	height: 72px;
+	background-color: #4e505f;
+	border-radius: 24px;
+	margin-right: 16px;
+	cursor: pointer;
+}
+
+.calc__btn-discharge:hover {
+	background-color: #5a5c70;
+}
+
+.calc__btn-delete {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 69px;
+	height: 72px;
+	background-color: #2e2f38;
+	border-radius: 24px;
+	cursor: pointer;
+}
+
+.calc__row-main {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.num {
+	margin: 0 16px 16px 0;
+	background-color: #2e2f38;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 24px;
+	height: 72px;
+	width: 69px;
+	cursor: pointer;
+}
+
+.num:hover,
+.calc__btn-delete:hover {
+	background-color: #363842;
+}
+
+.calc__btn-zero {
+	height: 72px;
+	flex: 1 1 auto;
+	background-color: #2e2f38;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 24px;
+	margin-right: 16px;
+	cursor: pointer;
+}
+
+.operator {
+	margin-bottom: 16px;
+	background-color: #4b5efc;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 24px;
+	height: 72px;
+	width: 69px;
+	cursor: pointer;
+	position: relative;
+}
+
+.operator:hover {
+	background-color: #5668fc;
+}
+
+.operator:active {
+	box-shadow: 0px 0px 15px 2px rgba(34, 60, 80, 0.32) inset;
+	transition: all 0.3s;
+}
